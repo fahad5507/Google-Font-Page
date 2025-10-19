@@ -1,0 +1,156 @@
+body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+}
+section{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+}
+section header{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+
+
+}
+section header ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+section header ul li{
+      list-style: none;
+      margin-left: 20px;
+}
+section header ul li a{
+      color: brown;
+      text-decoration: none;
+      font-size: 13px;
+}
+section header ul li button{
+      background: #0c56e0;
+      border: none;
+      outline: none;
+      padding: 8px 14px;
+      color: white;
+      border-radius: 4px;
+      font-size: 14px;
+       font-weight: bold;
+       cursor: pointer;
+}
+section .main{
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+}
+section .main .searchbar{
+      position: relative;
+      width: 100%;
+      margin-top: -55px;
+}
+section .main .searchbar .search{
+      width: 100%;
+      padding: 9px;
+      border-radius: 5px;
+      padding-left: 45px;
+      outline: none;
+      border: 2px solid rgb(rgb(46, 3, 3), rgb(15, 231, 15), rgb(93, 93, 231));
+      font-size: 16px;
+}
+section .main .searchbar .icon{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      padding: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      pointer-events:none ;
+      
+
+
+}
+section .main .buttons{
+      margin-top: 20px;
+}
+section .main .buttons button{
+      margin: 0;
+      padding: 12px;
+      color: rgb(78, 53, 53);
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px solid transparent;
+      outline: none;
+}
+section .main .buttons button:hover{
+       border-radius: 2px solid red;
+       border-radius: 5px;
+       background-color: cadetblue;
+}
+section .main .lng{
+      margin-top: 10px;
+
+}
+section .footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #c7d0e0;
+
+}
+section .footer .row{
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid red;
+}
+section .footer .row ul{
+      display: flex;
+}
+section .footer .row ul li{
+      list-style: none;
+}
+      section .footer .row ul li a{
+            text-decoration: none;
+            font-size: 13px;
+            color:  #101820;
+            margin-right: 20px;
+
+      }
+/* MOBILE VIEW */
+@media (max-width: 768px){
+section .main .searchbar .search{
+      width: 85%;
+}
+section .main .searchbar .icon {
+      width: 88%;
+}
+section .footer .row ul{
+      display: block;
+}
+section header{
+      width: 88%;
+}
+}
+/* DECKSTOP VIEW */
+
+@media (max-width:1024px;){
+
+}
+/* TABLET VIEW */
+@media (min-width:769pc;) and (max-width: 1024px;){
+      
+}
